@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="gradeForm">
+        <label for="studentName">Student Name:</label>
+        <input type="text" id="studentName" required>
+        <br>
+        <label for="quiz">Quiz:</label>
+        <input type="number" id="quiz" required>
+        <br>
+        <label for="pt">PT:</label>
+        <input type="number" id="pt" required>
+        <br>
+        <label for="exam">Exam:</label>
+        <input type="number" id="exam" required>
+        <br>
+        <button type="button" onclick="addGrade()">Add Grade</button>
+    </form>
+
+    <table id="gradeTable" border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Quiz</th>
+                <th>PT</th>
+                <th>Exam</th>
+                <th>Total Score</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Table data will be inserted here -->
+        </tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
